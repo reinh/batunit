@@ -14,6 +14,6 @@ while [ ${i:=0} -lt ${#FAILED[@]} ]; do
     echo -e "  $i) Failure: ${FAILED[$i]}: ${FAILURE_MSGS[$i]}\n"; ((i++))
 done
 
-echo -e "\nFinished: $TOTAL tests, ${#FAILED[@]} failures, ${#PENDING[@]} pending\n"
+echo -e "Finished: $TOTAL tests, ${#FAILED[@]} failures, ${#PENDING[@]} pending"
 
 # vim: sw=4:ts=4:sts=4
