@@ -8,7 +8,7 @@ batunit -- Bourne Again Test Unit
 
 ## DESCRIPTION
 
-**batunit** takes the files to run as an argument. It reports pess, fail,
+**batunit** takes the files to run as an argument. It reports pass, fail,
 pending based on the following:
 
 * A non-executable file is **pending**
