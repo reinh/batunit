@@ -30,3 +30,15 @@ failure message.
       0) Failure: test/test_fail.sh: FLUNK
     
     Finished: 3 tests, 1 failures, 1 pending
+
+## LICENSE
+
+MIT, see LICENSE
+
+## CONTRIBUTORS
+
+Rein Henrichs: <reinh@reinh.com>
+
+## COPYRIGHT
+
+Copyright (C) 2011 Rein Henrichs http://reinh.com
