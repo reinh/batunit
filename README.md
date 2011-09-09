@@ -39,6 +39,10 @@ MIT, see LICENSE
 
 Rein Henrichs: <reinh@reinh.com>
 
+## CREDITS
+
+* **Wayne Seguin**, for the name!
+
 ## COPYRIGHT
 
 Copyright (C) 2011 Rein Henrichs http://reinh.com
