@@ -4,16 +4,16 @@ TOTAL=0;  declare -a FAILED; declare -a FAILURE_MSGS; declare -a PENDING
 
 for test_file in "$@"; do
     ((TOTAL++))
-    [[ -x $test_file ]] || { PENDING+=("$test_file"); echo -n 'P'; continue; }
+    [[ -x $test_file ]] || { PENDING+=("$test_file"); printf 'P'; continue; }
     response=$( $test_file 2>&1 ); exit_status=$?
-    [ $exit_status -eq 0 ] && {  echo -n '.'; } || { FAILED+=("$test_file"); FAILURE_MSGS+=("$response"); echo -n 'F'; }
+    [[ $exit_status -eq 0 ]] && {  printf '.'; } || { FAILED+=("$test_file"); FAILURE_MSGS+=("$response"); printf 'F'; }
 done
-echo -e "\n"
+printf "\n\n"
 
-while [ ${i:=0} -lt ${#FAILED[@]} ]; do
-    echo -e "  $i) Failure: ${FAILED[$i]}: ${FAILURE_MSGS[$i]}\n"; ((i++))
+while [[ ${i:=0} -lt ${#FAILED[@]} ]]; do
+    printf "  $i) Failure: ${FAILED[$i]}: ${FAILURE_MSGS[$i]}\n\n"; ((i++))
 done
 
-echo -e "Finished: $TOTAL tests, ${#FAILED[@]} failures, ${#PENDING[@]} pending"
+printf "Finished: $TOTAL tests, ${#FAILED[@]} failures, ${#PENDING[@]} pending\n"
 
 # vim: sw=4:ts=4:sts=4
