@@ -4,7 +4,8 @@
 
     batunit <files>
 
-**batunit** is a xUnit-like testing framework written in pure bash in 12 lines of code.
+**batunit** is a xUnit-like testing framework written in pure bash in 12 lines
+of code.
 
 ## DESCRIPTION
 
@@ -14,6 +15,9 @@ pending based on the following:
 * A non-executable file is **pending**
 * An executable file that exits 0 is **pass**
 * An executable file that exits non-0 is **fail**
+
+Any output from the test files to `stdout` or `stderr` is captured as the
+failure message.
 
 ## EXAMPLES
 
