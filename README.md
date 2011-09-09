@@ -2,7 +2,7 @@ batunit -- Bourne Again Test Unit
 
 ## SYNOPSIS
 
-    batunit \<files\>
+    batunit <files>
 
 **batunit** is a xUnit-like testing framework written in pure bash in 12 lines of code.
 
@@ -19,7 +19,7 @@ pending based on the following:
 
     batunit test/*.sh
 
-Outputs:
+### Outputs:
 
     F.P
     
