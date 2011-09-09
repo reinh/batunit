@@ -1,4 +1,4 @@
-batunit -- Bourne Again Test Unit
+# batunit -- Bourne Again Test Unit
 
 ## SYNOPSIS
 
