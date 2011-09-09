@@ -37,7 +37,7 @@ MIT, see LICENSE
 
 ## CONTRIBUTORS
 
-Rein Henrichs: <reinh@reinh.com>
+* Rein Henrichs: <reinh@reinh.com>
 
 ## CREDITS
 
