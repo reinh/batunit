@@ -15,5 +15,6 @@ while [[ ${i:=0} -lt ${#FAILED[@]} ]]; do
 done
 
 printf "Finished: $TOTAL tests, ${#FAILED[@]} failures, ${#PENDING[@]} pending\n"
+exit ${#FAILED[@]}
 
 # vim: sw=4:ts=4:sts=4
