@@ -1,4 +1,7 @@
 . lib/test_helper.sh
 
-( bin/batunit "test/fixtures/test_pass.sh" &>/dev/null ) || flunk "test_pass.sh should exit 0 but was $?"
+( bin/batunit "test/fixtures/test_pass.sh" &>/dev/null ) ||
+    flunk "should exit 0 but was $?"
 exit 0
+
+# vim: sw=4:ts=4:sts=4
